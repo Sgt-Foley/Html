@@ -1,0 +1,173 @@
+/* 配置优先顺序：从外到内。先body,再container,再.box */
+body {
+  /* 颜色设置 */
+  background-color: #f4f4f4;
+  color: #555555;
+
+  /* 字体设置 */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+
+  /* 行间距 */
+  line-height: 2em;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.box1 {
+  background-color: antiquewhite;
+  color: royalblue;
+
+  /* 盒子模型参数设置(border) */
+  border: 5px blue solid;
+  border-top: 10px green solid;
+  border-right: 5px red solid;
+  border-bottom: 1px firebrick solid;
+  border-left: 8px blue solid;
+
+  /* 特定方向参数设置(border) */
+  border-bottom-width: 8px;
+  border-bottom-style: dashed;
+
+  /* 盒子模型参数设置(padding) */
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.box1 h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 800;
+  font-style: italic;
+
+  /* 文本设置：下划线，大小写 */
+  text-decoration: underline;
+  text-transform: uppercase;
+
+  /* 间距设置：字间距，词间距 */
+  letter-spacing: 1em;
+  word-spacing: 2em;
+}
+
+.box2 {
+  border: 5px dotted #cccccc;
+  /* 边框样式 */
+  border-radius: 35px;
+  padding: 20px;
+  margin: 20px 0;
+  /* 定位 */
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+
+.box2 h1 {
+  /* 文本居中 */
+  text-align: center;
+}
+
+/* 按钮设置 */
+button {
+  background-color: #444444;
+  color: #fff;
+  padding: 10px 5px;
+}
+
+button:hover {
+  background-color: red;
+}
+
+button:active {
+  background-color: #fff;
+}
+
+/* 列表设置 */
+.list li {
+  list-style-image: url("../");
+  list-style: square;
+}
+
+/* 超链接设置 */
+a {
+  text-decoration: none;
+  color: #555555;
+}
+
+a:hover {
+  color: cyan;
+}
+
+a:visited {
+  color: red;
+}
+
+/* 表格设置 */
+.block {
+  float: left;
+  width: 33.3%;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* float清除 */
+.clearfix {
+  clear: both;
+}
+
+#main-block {
+  float: left;
+  width: 70%;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#sidebar {
+  float: right;
+  width: 30%;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* 列表指定 */
+.list2 li:nth-child(even) {
+  background-color: grey;
+}
+
+.list2 li:first-child {
+  background-color: red;
+}
+
+.list2 li:nth-child(3) {
+  color: aqua;
+}
+
+/* 定位 */
+.positionbox {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  position: relative;
+}
+
+/* 定位交换位置 */
+.positionbox h1 {
+  position: absolute;
+  top: 50px;
+}
+
+.positionbox h2 {
+  position: absolute;
+  right: 30px;
+}
+
+/* 按钮固定 */
+#fixed{
+  position: fixed;
+  right: 0;
+  bottom:200px;
+}
